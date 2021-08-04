@@ -1,0 +1,271 @@
+$colorFrutas:hsl(0, 75%, 54%);
+$colorVerduras:rgb(157, 245, 70);
+$colorVarios: #d2691e;
+$colorLista:#eee344;
+$ancho:400px;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 70px;
+}
+body>section> article> ul>li{
+    
+    color:white
+}
+header{
+    
+    background-image:url(assets/frutasyVerdurasHeader.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav ul{
+    display: flex;
+    justify-content:flex-end 
+    
+}
+nav a {
+    text-decoration: none;
+    font-style:italic;
+    color:black;
+    
+}
+
+nav li{
+    
+    margin-inline-end: 5px;
+    padding: 2px 2px;
+    border-radius: 5px;
+    transition: 1s;
+    border: solid 3px black;
+    list-style-type: none;
+    margin-top: 15%;
+    background-color: rgba(255, 99, 71, 0.438);
+}
+nav li:hover{
+    background-color: black;
+}
+nav a:hover{
+    color: white;
+}
+section{
+    background-color: white;
+
+}
+section h2{
+    font-family: 'Akaya Kanadaka', cursive;
+    color: black;
+}
+section article{
+    text-align:center;
+}
+.listaDeMercaderia{
+    text-align: left;
+}
+aside{
+    background-color: rgb(236, 129, 53);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+
+aside>ol>li{
+    font-family: 'Adamina', serif;   
+    color: white;
+    text-align: left;
+}
+aside>p{
+    font-family: 'Adamina', serif;
+    font-size: large;
+    text-align: center;
+}
+iframe{
+    margin-top: 80px;
+}
+footer{
+    background-color: black;
+    background-image: linear-gradient(to top, white, black 80%);
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+}
+footer h4{
+    font-family: 'Andamina', serif;
+    text-align: right;
+    border: solid 2px white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 2px 2px;
+    margin-top: 20px;
+    color: white;
+    height: min-content;
+}
+.extra{
+    color: darkgoldenrod;
+    font-size: 50px;
+}
+.ofertaDelDia__mercaderia{
+    text-align:center;
+    font-family: 'Akaya Kanadaka', cursive;
+    border-style: solid; color: yellow;
+    padding: 2px 18px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: black;
+}
+
+.ofertaDelDia__mercaderia--textAlign{
+    list-style-type: none;
+    text-align: left;
+}
+.receta__titulo--color{
+    font-size: 50px;
+    font-family: 'Akaya Kanadaka', cursive;
+    color:black;
+}
+
+section>caption{
+    font-style: italic;
+    color: darkred;
+    font-size: x-large;
+}
+.seccionLista__tablaCompra--fontStyle{
+    font-style: oblique;
+    color: rgb(17, 42, 43);
+
+}
+
+
+.seccionFrutas__backgraund--color{
+    background-color: $colorFrutas;
+    border:solid 5px $colorFrutas+20;
+    height: 670px;
+}
+.seccionVerdura__backgraund--color{
+    background-color:$colorVerduras;
+    border: solid 5px (($colorVerduras/2)-50);
+    height: 670px;
+}
+.seccionVarios__backgraund--color{
+    background-color:$colorVarios;
+    border: solid 5px (($colorVarios*2)+20);
+    height: 670px;
+}
+.seccionLista__backgraund--color{
+    background-color: $colorLista;
+    border: solid 5px $colorLista+$colorFrutas;
+    height: 670px;
+}
+.border{
+    border: 2px solid rgb(7, 7, 7);
+}
+.aside__receta--border{
+    border: 2px solid rgb(243, 243, 6);
+}
+.header__logo{
+    float: left;
+    
+    
+    
+}
+.header__logo:hover{
+    transform:rotateZ(360deg);
+    transition: 2s;
+}
+#gridsEnSection{
+    display: grid;
+    grid-template-areas: 
+    "oferta verdura"
+    "oferta fruta"
+    "oferta varios";
+    grid-template-columns: 30% auto;
+    grid-template-rows: 33% 33% auto;
+}
+article#verduras{
+grid-area: verdura;
+}
+article#frutas{
+    grid-area: fruta;
+}
+article#varios{
+    grid-area: varios;
+}
+article#oferta{
+    grid-area: oferta;
+}
+.gridsEnBody{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "section aside"
+    "footer footer";
+    grid-template-columns: 70% auto;
+    grid-template-rows: 25% 65% auto;
+}
+header{
+    grid-area: header;
+}
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+@media only screen and(max-width: $ancho){
+    .gridsEnBody{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+    #gridsEnSection{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and(min-width: 401px)and(max-width: 960px) {
+    .gridsEnBody{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+    #gridsEnSection{
+        display: flex;
+        flex-direction:column;
+    }
+    
+}
+
+
+tr>th{
+    padding: 7px;
+    border: 2px solid black;
+    
+}
+ /* $colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+section{
+    @if ($ancho == 500px) {
+        background-color: blueviolet;
+    } @else {
+        seccionFrutas__backgraund--color: crimson;
+    }
+} */
