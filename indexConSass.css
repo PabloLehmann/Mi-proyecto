@@ -130,6 +130,10 @@ footer h4 {
 .extra {
   color: darkgoldenrod;
   font-size: 50px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-perspective-origin: right;
+          perspective-origin: right;
 }
 
 .ofertaDelDia__mercaderia {
@@ -212,8 +216,8 @@ section > caption {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "oferta verdura" "oferta fruta" "oferta varios";
-  -ms-grid-columns: 30% auto;
-      grid-template-columns: 30% auto;
+  -ms-grid-columns: 25% auto;
+      grid-template-columns: 25% auto;
   -ms-grid-rows: 33% 33% auto;
       grid-template-rows: 33% 33% auto;
 }
@@ -247,10 +251,10 @@ article#oferta {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header header" "section aside" "footer footer";
-  -ms-grid-columns: 70% auto;
-      grid-template-columns: 70% auto;
-  -ms-grid-rows: 25% 65% auto;
-      grid-template-rows: 25% 65% auto;
+  -ms-grid-columns: 80% auto;
+      grid-template-columns: 80% auto;
+  -ms-grid-rows: 16% 69% auto;
+      grid-template-rows: 16% 69% auto;
 }
 
 header {

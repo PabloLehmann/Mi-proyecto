@@ -106,6 +106,8 @@ footer h4{
 .extra{
     color: darkgoldenrod;
     font-size: 50px;
+    perspective: 1000px;
+    perspective-origin: right;
 }
 .ofertaDelDia__mercaderia{
     text-align:center;
@@ -115,11 +117,13 @@ footer h4{
     border-radius: 10px;
     font-size: 30px;
     background-color: black;
+    
 }
 
 .ofertaDelDia__mercaderia--textAlign{
     list-style-type: none;
-    text-align: left;
+    text-align:left;
+    
 }
 .receta__titulo--color{
     font-size: 50px;
@@ -181,7 +185,7 @@ section>caption{
     "oferta verdura"
     "oferta fruta"
     "oferta varios";
-    grid-template-columns: 30% auto;
+    grid-template-columns: 25% auto;
     grid-template-rows: 33% 33% auto;
 }
 article#verduras{
@@ -202,8 +206,8 @@ article#oferta{
     "header header"
     "section aside"
     "footer footer";
-    grid-template-columns: 70% auto;
-    grid-template-rows: 25% 65% auto;
+    grid-template-columns: 80% auto;
+    grid-template-rows: 16% 69% auto;
 }
 header{
     grid-area: header;
