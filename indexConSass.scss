@@ -1,179 +1,152 @@
-$colorFrutas:hsl(0, 75%, 54%);
-$colorVerduras:rgb(157, 245, 70);
-$colorVarios: #d2691e;
-$colorLista:#eee344;
+$colorFrutas: #ff686b;
+$colorVerduras: #a5ffd6;
+$colorVarios: #84dcc6;
+$colorLista:#ffa69e;
 $ancho:400px;
+@mixin fuente-Y-Peso($f, $p) {
+    font-family: $f;
+    font-size: $p;
+
+}
 *{
     margin: 0;
     padding: 0;
 }
 
-h2{
-    font-size: 70px;
-}
-body>section> article> ul>li{
-    
-    color:white
-}
+
+
 header{
     
     background-image:url(assets/frutasyVerdurasHeader.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-}
-nav ul{
-    display: flex;
-    justify-content:flex-end 
-    
-}
-nav a {
-    text-decoration: none;
-    font-style:italic;
-    color:black;
-    
+    nav li{
+        
+        font-style:italic;
+        margin-inline-end: 3px;
+        padding: 1px 1px;
+        border-radius: 5px;
+        transition: 1s;
+        border: solid 2px rgb(248, 247, 247);
+        margin-top: 10%;
+        
+    }
+    nav li:hover{
+        background-color: black;
+    }
 }
 
-nav li{
-    
-    margin-inline-end: 5px;
-    padding: 2px 2px;
-    border-radius: 5px;
-    transition: 1s;
-    border: solid 3px black;
-    list-style-type: none;
-    margin-top: 15%;
-    background-color: rgba(255, 99, 71, 0.438);
-}
-nav li:hover{
-    background-color: black;
-}
-nav a:hover{
-    color: white;
-}
+
+
 section{
     background-color: white;
+    article{
+        text-align:center;
+        h2{
+            color: black;
+            @include fuente-Y-Peso('Akaya Kanadaka', 60px );
+        }
+        li{
+            color:white;
+        }
+    }
 
 }
-section h2{
-    font-family: 'Akaya Kanadaka', cursive;
-    color: black;
-}
-section article{
-    text-align:center;
-}
-.listaDeMercaderia{
-    text-align: left;
-}
+
 aside{
-    background-color: rgb(236, 129, 53);
+    background-color: #4dfd36;
     display: flex;
     flex-direction:column;
     align-items: center;
     
+    li{
+        @include fuente-Y-Peso('Akaya Kanadaka', 20px );
+        color:black;
+    }
+    p{
+        @include fuente-Y-Peso('Adamina', large );
+        text-align: center;
+        color:black;
+    }
+    iframe{
+        margin-top: 80px;
+    }
 }
 
-aside>ol>li{
-    font-family: 'Adamina', serif;   
-    color: white;
-    text-align: left;
-}
-aside>p{
-    font-family: 'Adamina', serif;
-    font-size: large;
-    text-align: center;
-}
-iframe{
-    margin-top: 80px;
-}
 footer{
-    background-color: black;
-    background-image: linear-gradient(to top, white, black 80%);
+    background-image: linear-gradient(to top, black,rgb(14, 13, 13), rgb(75, 74, 74));
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     height: 150px;
-}
-footer h4{
-    font-family: 'Andamina', serif;
-    text-align: right;
-    border: solid 2px white;
-    border-radius: 10px;
-    display: inline-block;
-    padding: 2px 2px;
-    margin-top: 20px;
-    color: white;
-    height: min-content;
+    h4{
+        font-family: 'Andamina', serif;
+        border: solid 2px white;
+        border-radius: 10px;
+        padding: 2px 2px;
+        margin-top: 50px;
+        color: white;
+        height: min-content;
+    }
 }
 .extra{
     color: darkgoldenrod;
     font-size: 50px;
-    perspective: 1000px;
-    perspective-origin: right;
 }
 .ofertaDelDia__mercaderia{
-    text-align:center;
-    font-family: 'Akaya Kanadaka', cursive;
-    border-style: solid; color: yellow;
+    background-color: #080808;
+    border: solid 2px black;
     padding: 2px 18px;
-    border-radius: 10px;
-    font-size: 30px;
-    background-color: black;
+    border-radius: 1px;
+    font-family: 'Akaya Kanadaka', cursive;
     
 }
 
 .ofertaDelDia__mercaderia--textAlign{
     list-style-type: none;
     text-align:left;
+    font-size: 30px;
     
 }
 .receta__titulo--color{
-    font-size: 50px;
-    font-family: 'Akaya Kanadaka', cursive;
+    @include fuente-Y-Peso('Akaya Kanadaka', 50px );
     color:black;
 }
 
-section>caption{
-    font-style: italic;
-    color: darkred;
-    font-size: x-large;
+.caption{
+    color: rgb(0, 0, 0);
+    @include fuente-Y-Peso('Akaya Kanadaka', 40px );
 }
 .seccionLista__tablaCompra--fontStyle{
     font-style: oblique;
-    color: rgb(17, 42, 43);
-
 }
-
-
 .seccionFrutas__backgraund--color{
     background-color: $colorFrutas;
-    border:solid 5px $colorFrutas+20;
+    border:solid 3px $colorFrutas+20;
     height: 670px;
 }
 .seccionVerdura__backgraund--color{
     background-color:$colorVerduras;
-    border: solid 5px (($colorVerduras/2)-50);
+    border: solid 3px (($colorVerduras/2)-50);
     height: 670px;
 }
 .seccionVarios__backgraund--color{
     background-color:$colorVarios;
-    border: solid 5px (($colorVarios*2)+20);
+    border: solid 3px (($colorVarios*2)+20);
     height: 670px;
 }
 .seccionLista__backgraund--color{
     background-color: $colorLista;
-    border: solid 5px $colorLista+$colorFrutas;
+    border: solid 3px $colorLista+$colorFrutas;
     height: 670px;
 }
 .border{
     border: 2px solid rgb(7, 7, 7);
 }
 .aside__receta--border{
-    border: 2px solid rgb(243, 243, 6);
+    border: 2px solid black;
 }
 .header__logo{
-    float: left;
-    
-    
-    
+     float: left;
 }
 .header__logo:hover{
     transform:rotateZ(360deg);
@@ -230,6 +203,7 @@ footer{
     #gridsEnSection{
         display: flex;
         flex-direction: column;
+        width: max-content;
     }
 }
 @media only screen and(min-width: 401px)and(max-width: 960px) {
@@ -241,6 +215,7 @@ footer{
     #gridsEnSection{
         display: flex;
         flex-direction:column;
+        width: max-content;
     }
     
 }
@@ -249,27 +224,5 @@ footer{
 tr>th{
     padding: 7px;
     border: 2px solid black;
-    
 }
- /* $colors: (
-  "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "white":      $white,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800
-);
-section{
-    @if ($ancho == 500px) {
-        background-color: blueviolet;
-    } @else {
-        seccionFrutas__backgraund--color: crimson;
-    }
-} */
+ 

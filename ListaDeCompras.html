@@ -7,6 +7,7 @@
     <title>Frutti Go! - Mi lista</title>
     <meta name="Description" content="Seguridad al comprar desde tu hogar, nosotro te llevamos la confiabilidad a tu puerta">
     <meta name="Keyworks" content="Confiabilidad, hogar, debito, crédito, tarjeta, efectivo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="indexConSass.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,7 @@
 
 <body class="gridsEnBody">
     <header>
-        <a href="indexPrincipalConSass.html">
+        <a href="indexPrincipal.html">
         <img src="assets/Logo2.png" alt="logo" height="150px" width="150px" class="header__logo">
         <!--logo-->
         </a>
@@ -28,19 +29,19 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link " href="indexPrincipalConSass.html">Principal</a>
+                    <a class="nav-link " href="indexPrincipal.html">Principal</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="indexVerdura.html">Verduras</a>
+                    <a class="nav-link" href="Verdura.html">Verduras</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="indexFruta.html">Frutas</a>
+                    <a class="nav-link" href="Fruta.html">Frutas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="indexVarios.html">Varios</a>
+                    <a class="nav-link" href="Varios.html">Varios</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="indexListaDeCompras.html">Mi lista de compras</a>
+                      <a class="nav-link active" aria-current="page" href="ListaDeCompras.html">Mi lista de compras</a>
                     </li>
                 </ul>
               </div>
@@ -49,9 +50,10 @@
       
     </header>
     <section class="seccionLista__backgraund--color">
+        <article>
         <h2>Tu carrito de compras</h2>
-        
-        <caption>Que compre?</caption>
+        </article>
+        <h4 class="caption">Que compre?<h4>
        <table>
         <colgroup>
             <col>
@@ -112,7 +114,7 @@
             </div>
             <div>
                 
-                <textarea name="texto" cols="30" rows="10" placeholder="Comentario"></textarea>
+                <textarea name="texto" cols="25" rows="5" placeholder="Comentario"></textarea>
             </div>
             <div>
                 
@@ -124,8 +126,8 @@
 
         </form>
     </section>
-    <aside>
-        <h3>Como abonar en FRUTTI GO!</h3>
+    <aside class="aside__receta--border">
+        <h3 class="receta__titulo--color animate__animated animate__bounce">Como abonar en FRUTTI GO!</h3>
         <P>En este video de enseñaremos como <strong>abonar</strong> con "Mercado Pago"</P>
         <iframe width="260" height="215" src="https://www.youtube.com/embed/13oTwknV9Bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </aside>
