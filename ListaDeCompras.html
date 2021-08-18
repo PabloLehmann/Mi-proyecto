@@ -18,7 +18,7 @@
 <body class="gridsEnBody">
     <header>
         <a href="index.html">
-        <img src="assets/Logo2.png" alt="logo" height="150px" width="150px" class="header__logo">
+        <img src="assets/fruttilogo.png" alt="logo" height="150px" width="150px" class="header__logo">
         <!--logo-->
         </a>
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -51,12 +51,12 @@
     </header>
     <section class="seccionLista__backgraund--color">
         <article>
-        <h2>Tu carrito de compras</h2>
-        </article>
-        <h4 class="caption">Que compre?<h4>
-       <table>
-        <colgroup>
-            <col>
+        <h2>Carrito de compras</h2>
+        <h4 class="caption">Que compre?</h4>
+           <div id="tabla"> 
+            <table>
+                <colgroup>
+                    <col>
             <col>
             <col style="background-color: rgb(139, 255, 255);">
         </colgroup>
@@ -69,72 +69,103 @@
                <th>Manzana roja</th>
                <th>1k</th>
                <th>$150</th>
-           </tr>
+            </tr>
            <tr>
-                <th>Pomelos</th>
+               <th>Pomelos</th>
                 <th>2k</th>
                 <th>$220</th>
-           </tr>
+            </tr>
            <tr>
                <th>Papas</th>
                <th>3k</th>
                <th>$150</th>
-           </tr>
-
-
-       </table>
-
-       <fieldset >
-        <form method="GET">
-            <div> 
-            <label for="nombre">Nombres</label>
-            <input type="text" name="nombre" placeholder=""/>
+            </tr>
             
-            <label for="apellido">Apellidos</label>
-            <input type="text" name="nombre" placeholder=""/>
-            </div>
-            <div>
-                <label for="telefono">Telefono</label>
-                <input type="tel" name="telefono" placeholder=""/>
             
-            <label for="direccion"> Dirección</label>
-            <input type="text" name="Direccion" placeholder=""/>
-            </div>
+            </table>
+              </div>
+    </article>
+    <article>
 
-            <select name="departamento">
-                <option value="Godoy cruz">Godoy cruz</option>
-                <option value="Guaymallen">Guaymallen</option>
-                <option value="Las Heras">Las Heras</option>
-                <option value="Capital">Capital</option>
-            </select>
+        
+        <form class="formulario" method="GET">
+            <fieldset >
+                <div class="formulario--margen"> 
+                    <label for="nombre">Nombres</label>
+                    <input type="text" name="nombre" placeholder=""/>
+        
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" name="nombre" placeholder=""/>
+                </div>
+                <div class="formulario--margen">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="telefono" placeholder=""/>
+
+                    <label for="direccion"> Dirección</label>
+                    <input type="text" name="Direccion" placeholder=""/>
+                </div>
+                
+                <select name="departamento">
+                    <option value="Godoy cruz">Godoy cruz</option>
+                    <option value="Guaymallen">Guaymallen</option>
+                    <option value="Las Heras">Las Heras</option>
+                    <option value="Capital">Capital</option>
+                </select>
             </fieldset>
-            <div>
+            <div class="formulario--margen">
                 <input type="checkbox" name="acepta" value="1" />
                 <label for="acepta">Desea recibir ofertas del día</label>
             </div>
-            <div>
+            <div class="formulario--margen">
                 
                 <textarea name="texto" cols="25" rows="5" placeholder="Comentario"></textarea>
             </div>
-            <div>
+            <div class="formulario--margen">
                 
                 <input type="submit" value="Enviar" />
                 <input type="reset" value="Limpiar" />
                 <input type="button" value="Guardar para después" />
                 
             </div>
-
+            
         </form>
+    </article>
+    
     </section>
     <aside class="aside__receta--border">
-        <h3 class="receta__titulo--color animate__animated animate__bounce">Como abonar en FRUTTI GO!</h3>
-        <P>En este video de enseñaremos como <strong>abonar</strong> con "Mercado Pago"</P>
+        <h4 class="caption animate__animated animate__bounce">Como abonar en FRUTTI GO!</h4>
+        <p>En este video de enseñaremos como <strong>abonar</strong> </p>
+        <p>con "Mercado Pago"</p>
         <iframe width="260" height="215" src="https://www.youtube.com/embed/13oTwknV9Bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/cliente uno.jpg" class="d-block w-100" alt="clienteContento">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/cliente dos.jpg" class="d-block w-100" alt="clienteContento">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/cliente uno.jpg" class="d-block w-100" alt="clienteContento">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </aside>
+
     <footer>
-        <h4>redes sociale</h4>
-        <h4>compartir</h4>
-        <h4>contacto</h4>
+      <h4>Redes Sociales</h4>
+      <h4>Compartir</h4>
+      <h4>Contacto</h4>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js.bootstrap.min.js"></script> </script>
