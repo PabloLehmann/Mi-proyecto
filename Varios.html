@@ -17,8 +17,8 @@
 
 <body class="gridsEnBody">
     <header>
-      <a href="index.html">
-        <img src="assets/fruttilogo.png" alt="logo" height="150px" width="150px" class="header__logo">
+      <a href="index.html" class="header__logo">
+        <img src="assets/fruttilogo.png" alt="logo" height="130px" width="130px">
         <!--logo-->
       </a>
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -51,43 +51,45 @@
     <section class="seccionVarios__backgraund--color">
       <article>
           <h2>Varios</h2>
-            
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Mercaderia</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Kg/Cantidad</th>
-                    <th scope="col">Precio</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row"><img width="100" height="100" src="assets/huevos.jpg" alt="imagenDeHuevos"></th>
-                    <td>Huevos</td>
-                    <td><input type="number" name="Kilogramos"/></td>
-                    <td>$150 x Docena</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><img width="100" height="100" src="assets/salsa.jpg" alt="imagenDeSalsa"></th>
-                    <td>Salsa</td>
-                    <td><input type="number" name="Kilogramos"/></td>
-                    <td>$230 x Kg</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><img width="100" height="100" src="assets/jengibre.jpg" alt="imagenDeJengibre"></th>
-                    <td>Jengibre</td>
-                    <td><input type="number" name="Kilogramos"/></td>
-                    <td>$620 x Kg</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><img width="100" height="100" src="assets/canela.jpg" alt="imagenDeCanela"></th>
-                    <td>Canela</td>
-                    <td><input type="number" name="Kilogramos"/></td>
-                    <td>$800 x Kg</td>
-                  </tr>
-                </tbody>
-              </table>
+    
+              <div class="cardDeMercaderia">
+                <div class="card m-1" style="width: 12rem;">
+                  <img src="assets/salsa.jpg" width="90px" height="140px" class="card-img-top" alt="imagenDeSalsa">
+                  <div class="card-body">
+                    <h5 class="card-title">Salsa</h5>
+                    <p class="card-text">Salsa de primera calidad $145 los 500gr.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito.</a>
+                  </div>
+                </div>
+  
+                <div class="card m-1" style="width: 12rem;">
+                  <img src="assets/huevos.jpg" width="90px" height="140px" class="card-img-top" alt="imagenDeHuevos">
+                  <div class="card-body">
+                    <h5 class="card-title">Huevos </h5>
+                    <p class="card-text">Huevos de color frescos $160 la Docena</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito.</a>
+                  </div>
+                </div>
+  
+                <div class="card m-1" style="width: 12rem;">
+                  <img src="assets/jengibre.jpg" width="90px" height="140px" class="card-img-top" alt="imagenDeJengibre">
+                  <div class="card-body">
+                    <h5 class="card-title">Jengibre</h5>
+                    <p class="card-text">Jengibre fresco $650 el Kilo.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito.</a>
+                  </div>
+                </div>
+  
+                <div class="card m-1" style="width: 12rem;">
+                  <img src="assets/canela.jpg" width="90px" height="140px" class="card-img-top" alt="imagenDeCanela">
+                  <div class="card-body">
+                    <h5 class="card-title">Canela</h5>
+                    <p class="card-text">Canela en rama $1440 el Kilo.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito.</a>
+                  </div>
+                </div>
+              </div>
+  
         </article>
         
     </section>

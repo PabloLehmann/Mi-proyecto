@@ -46,11 +46,11 @@ section article h2 {
 }
 
 section article li {
-  color: white;
+  color: black;
 }
 
 aside {
-  background-color: #ffda9e;
+  background-color: #5ef8174d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,8 +111,8 @@ footer h4 {
 }
 
 .ofertaDelDia__mercaderia {
-  background-color: #080808;
-  border: solid 2px black;
+  background-color: #5ef8174d;
+  border: solid 2px white;
   padding: 2px 18px;
   border-radius: 1px;
   font-family: 'Akaya Kanadaka', cursive;
@@ -136,32 +136,44 @@ footer h4 {
   font-size: 2.5rem;
 }
 
+.cardDeMercaderia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card:hover {
+  background-color: #5ef8174d;
+}
+
 .seccionLista__tablaCompra--fontStyle {
   font-style: oblique;
 }
 
 .seccionFrutas__backgraund--color {
-  background-color: #eec4b16c;
-  border: solid 3px #eec4b16c20;
-  height: 670px;
+  background-color: #eec4b157;
+  border: solid 1px #eec4b15720;
+  height: auto;
 }
 
 .seccionVerdura__backgraund--color {
-  background-color: #b0f2c281;
-  border: solid 1px #b0f2c281/2-50;
-  height: 670px;
+  background-color: #b0f2c26b;
+  border: solid 1px #b0f2c26b/2-50;
+  height: auto;
 }
 
 .seccionVarios__backgraund--color {
-  background-color: #fbdb70;
-  border: solid 1px #fffff4;
-  height: 670px;
+  background-color: #fbda704d;
+  border: solid 1px #fbda704d20;
+  height: auto;
 }
 
 .seccionLista__backgraund--color {
-  background-color: #d1f5a8f3;
-  border: solid 3px #d1f5a8f3#eec4b16c;
-  height: 670px;
+  background-color: #f5eaa881;
+  border: solid 1px #f5eaa881#eec4b157;
+  height: auto;
 }
 
 .border {
@@ -173,8 +185,8 @@ footer h4 {
 }
 
 .header__logo {
-  margin-right: 130px;
-  margin-top: 5px;
+  margin-right: 9rem;
+  margin-top: 0.3rem;
 }
 
 .header__logo:hover {
@@ -210,8 +222,8 @@ footer h4 {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "oferta verdura" "oferta fruta" "oferta varios";
-  -ms-grid-columns: 25% auto;
-      grid-template-columns: 25% auto;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
   -ms-grid-rows: 33% 33% auto;
       grid-template-rows: 33% 33% auto;
 }
@@ -247,8 +259,8 @@ article#oferta {
       grid-template-areas: "header header" "section aside" "footer footer";
   -ms-grid-columns: 80% auto;
       grid-template-columns: 80% auto;
-  -ms-grid-rows: 16% 69% auto;
-      grid-template-rows: 16% 69% auto;
+  -ms-grid-rows: 150px 69% auto;
+      grid-template-rows: 150px 69% auto;
 }
 
 header {
@@ -277,7 +289,7 @@ footer {
   grid-area: footer;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .gridsEnBody {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -286,9 +298,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
   #gridsEnSection {
     display: -webkit-box;
@@ -298,16 +307,30 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
   .header__logo {
-    margin-right: 85px;
+    margin-right: 15%;
+  }
+  .cardDeMercaderia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 501px) and (max-width: 960px) {
   .gridsEnBody {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -316,9 +339,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
   #gridsEnSection {
     display: -webkit-box;
@@ -328,18 +348,19 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
   .header__logo {
-    margin-right: 100px;
+    margin-right: 20%;
   }
 }
 
 .errorDePagina {
   margin-top: 20%;
   margin-left: 40%;
+}
+
+.fondo__Error--color {
+  background-color: rgba(255, 0, 0, 0.698);
 }
 
 tr > th {

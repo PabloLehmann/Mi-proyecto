@@ -17,8 +17,8 @@
 
 <body class="gridsEnBody">
     <header>
-      <a href="index.html">
-        <img src="assets/fruttilogo.png" alt="logo" height="150px" width="150px" class="header__logo">
+      <a href="index.html" class="header__logo">
+        <img src="assets/fruttilogo.png" alt="logo" height="130px" width="130px" >
       </a>
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
           <div class="container-fluid">
@@ -53,42 +53,44 @@
       <article>
           <h2>Frutas</h2>
             
-             <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Mercaderia</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Kg/Cantidad</th>
-                    <th scope="col">Precio</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row"><img width="100" height="100" src="assets/manzanas.jpg" alt="imagenDePapas"></th>
-                    <td>Manzanas</td>
-                    <td><input type="number" name="Kilogramos"/></td>
-                    <td>$150 x Kg</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><img width="100" height="100" src="assets/bananas.jpg" alt="imagenDeCamotes"></th>
-                    <td>Bananas</td>
-                    <td><input type="number" name="Kilogramos"/></td>
-                    <td>$130 x Kg</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><img width="100" height="100" src="assets/uvas.jpg" alt="imagenDeZanahoria"></th>
-                    <td>Uvas</td>
-                    <td><input type="number" name="Kilogramos"/></td>
-                    <td>$120 x Kg</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><img width="100" height="100" src="assets/naranjas.jpg" alt="imagenDeZanahoria"></th>
-                    <td>Naranjas</td>
-                    <td><input type="number" name="Kilogramos"/></td>
-                    <td>$80 x Kg</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="cardDeMercaderia">
+                <div class="card m-1" style="width: 12rem;">
+                  <img src="assets/bananas.jpg" width="90px" height="140px" class="card-img-top" alt="imagenDeBananas">
+                  <div class="card-body">
+                    <h5 class="card-title">Bananas</h5>
+                    <p class="card-text">Bananas del ecuador $155 el Kilo.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito.</a>
+                  </div>
+                </div>
+  
+                <div class="card m-1" style="width: 12rem;">
+                  <img src="assets/manzanas.jpg" width="90px" height="140px" class="card-img-top" alt="imagenDeManzanas">
+                  <div class="card-body">
+                    <h5 class="card-title">Manzanas Rojas</h5>
+                    <p class="card-text">Manzanas de Rio Negro $160 el Kilo.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito.</a>
+                  </div>
+                </div>
+  
+                <div class="card m-1" style="width: 12rem;">
+                  <img src="assets/naranjas.jpg" width="90px" height="140px" class="card-img-top" alt="imagenDeNaranjas">
+                  <div class="card-body">
+                    <h5 class="card-title">Naranjas</h5>
+                    <p class="card-text">Naranjas elegida de jugo $80 el Kilo.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito.</a>
+                  </div>
+                </div>
+  
+                <div class="card m-1" style="width: 12rem;">
+                  <img src="assets/uvas.jpg" width="90px" height="140px" class="card-img-top" alt="imagenDeUvas">
+                  <div class="card-body">
+                    <h5 class="card-title">Uvas</h5>
+                    <p class="card-text">Uvas Redglobe $140 el Kilo.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito.</a>
+                  </div>
+                </div>
+              </div>
+  
         </article>
 
         </article>
